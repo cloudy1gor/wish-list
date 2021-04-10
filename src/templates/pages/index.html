@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Wish-list</title>
+    <meta name="description" content="wish-list" />
+    <meta name="keywords" content="wish-list" />
+
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      @@loop('templates/components/_header.html',[{
+      "title":"header title" }])
+      <main class="main"></main>
+
+      @@include('templates/components/_footer.html')
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

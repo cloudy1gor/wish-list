@@ -1,0 +1,18 @@
+// Fonts styles
+@font-face {
+  src: url("../fonts/Montserat-Regular.woff2")
+      format("woff2"),
+    url("../fonts/Montserat-Regular.woff") format("woff");
+  font-family: "Montserat-Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  src: url("../fonts/Montserat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserat-Bold.woff") format("woff");
+  font-family: "Montserat-Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
