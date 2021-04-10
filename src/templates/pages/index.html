@@ -18,7 +18,39 @@
     <div class="wrapper">
       @@loop('templates/components/_header.html',[{
       "title":"header title" }])
-      <main class="main"></main>
+      <main class="main">
+        <div
+          class="top"
+          style="background-image: url('images/bg.jpg')"
+        >
+          <div class="container">
+            <div class="top__inner">
+              <h1 class="top__title">my wishlist</h1>
+
+              <nav
+                aria-label="breadcrumb"
+                style="--bs-breadcrumb-divider: '>'"
+              >
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="#">Home</a>
+                  </li>
+                  <li
+                    class="breadcrumb-item active"
+                    aria-current="page"
+                  >
+                    My Wishlist
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <section class="wishlist">
+          <div class="container"></div>
+        </section>
+      </main>
 
       @@include('templates/components/_footer.html')
     </div>

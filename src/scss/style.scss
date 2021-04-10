@@ -6,4 +6,40 @@
 @import "global";
 // @import "sprite";
 @import "components/header";
+@import "components/menu";
 @import "components/footer";
+
+.breadcrumb-item {
+  text-transform: uppercase;
+
+  &.active {
+    color: #888;
+    @extend %ms-400;
+  }
+
+  & > a {
+    color: #444;
+    cursor: pointer;
+  }
+
+  & + .breadcrumb-item::before {
+    color: #444;
+  }
+  @extend %ms-700;
+}
+
+.top {
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 150px;
+  }
+
+  &__title {
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #222;
+    @extend %ms-700;
+  }
+}

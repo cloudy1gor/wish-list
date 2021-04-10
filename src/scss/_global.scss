@@ -13,8 +13,9 @@ html {
 body {
   font-size: 16px;
   line-height: 1.5;
-  color: $default;
-  @extend %dms-regular;
+  color: #444;
+  background-color: #fff;
+  @extend %ms-400;
 }
 
 .wrapper {
@@ -30,24 +31,47 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1230px;
+  max-width: 1170px;
 }
 
-// кноака наверх
-.up {
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  z-index: 999;
-  display: none;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
+.logo {
+  &__title {
+    position: relative;
+    font-size: 26px;
+    color: #e24545;
 
-  &--animated {
-    animation-name: "up";
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-iteration-count: infinite;
+    &::before {
+      @include pseudo();
+      left: 0;
+      bottom: 0;
+      width: 10px;
+      height: 3px;
+      background-color: #e24545;
+    }
+  }
+
+  &--black {
+    color: #222;
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+    @extend %ms-400;
+  }
+  @extend %ms-700;
+}
+
+.fa,
+.fas,
+.far,
+.fal,
+.fab {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+
+  &::before {
+    font-weight: 900;
   }
 }

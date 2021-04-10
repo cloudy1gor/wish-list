@@ -1,2 +1,14 @@
 .footer {
+  &__body {
+    min-height: 190px;
+    font-size: 14px;
+    background-color: #f6f6f6;
+  }
+
+  &__bottom {
+    min-height: 92px;
+    font-size: 11px;
+    text-transform: uppercase;
+    background-color: #e6e6e6;
+  }
 }

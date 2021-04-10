@@ -1,0 +1,30 @@
+.menu {
+  &__link {
+    position: relative;
+    display: inline;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #444;
+    transition: color 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      color: #e24545;
+    }
+
+    &--active {
+      color: #e24545;
+
+      &::before {
+        @include pseudo();
+        left: 0;
+        bottom: -6px;
+        width: 10px;
+        height: 3px;
+        background-color: #e24545;
+      }
+    }
+    @extend %ms-700;
+  }
+}
