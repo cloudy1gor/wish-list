@@ -1,8 +1,9 @@
+$fa-font-path: "/assets/webfonts" !default;
 @import "../../node_modules/normalize.css/normalize.css";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-$fa-font-path: "/assets/webfonts" !default;
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+@import "../../node_modules/swiper/swiper.scss";

@@ -6,39 +6,26 @@
     <meta name="keywords" content="wish-list" />
 
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
   <body>
     <div class="wrapper">
-      @@loop('templates/components/_header.html',[{
-      "title":"header title" }])
+      @@loop('templates/components/_header.html',[{ "title":"header title" }])
       <main class="main">
-        <div
-          class="top"
-          style="background-image: url('images/bg.jpg')"
-        >
+        <div class="top" style="background-image: url('images/bg.jpg')">
           <div class="container">
             <div class="top__inner">
               <h1 class="top__title">my wishlist</h1>
 
-              <nav
-                aria-label="breadcrumb"
-                style="--bs-breadcrumb-divider: '>'"
-              >
+              <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item">
                     <a href="#">Home</a>
                   </li>
-                  <li
-                    class="breadcrumb-item active"
-                    aria-current="page"
-                  >
+                  <li class="breadcrumb-item active" aria-current="page">
                     My Wishlist
                   </li>
                 </ol>
@@ -48,7 +35,252 @@
         </div>
 
         <section class="wishlist">
-          <div class="container"></div>
+          <div class="container">
+            <button class="wishlist--clear" type="button">clear list</button>
+
+            <ul class="wishlist__body row">
+              <li class="wishlist__item product col-3">
+                <div class="product__img-wrapper">
+                  <img
+                    src="images/products/1.jpg"
+                    alt="product"
+                    class="product__img"
+                  />
+
+                  <div class="product__overlay">
+                    <button class="product--remove">remove from list</button>
+                  </div>
+                </div>
+
+                <h3 class="product__title">Huawei mate s</h3>
+                <span class="product__price">280.00</span>
+
+                <form action="#" class="product__form">
+                  <button class="product__btn" type="button">
+                    <i class="fas fa-trash-alt"></i>
+                  </button>
+
+                  <button class="product__btn" type="button">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </form>
+              </li>
+
+              <li class="wishlist__item product col-3">
+                <div class="product__img-wrapper">
+                  <img
+                    src="images/products/3.jpg"
+                    alt="product"
+                    class="product__img"
+                  />
+                  <div class="product__overlay">
+                    <button class="product--remove">remove from list</button>
+                  </div>
+                </div>
+
+                <h3 class="product__title">Huawei mate s</h3>
+                <span class="product__price">280.00</span>
+
+                <form action="#" class="product__form">
+                  <button class="product__btn" type="button">
+                    <i class="fas fa-trash-alt"></i>
+                  </button>
+
+                  <button class="product__btn" type="button">
+                    <i class="product__order fas fa-shopping-cart"></i>
+                  </button>
+                </form>
+              </li>
+
+              <li class="wishlist__item product col-3">
+                <div class="product__img-wrapper">
+                  <img
+                    src="images/products/4.jpg"
+                    alt="product"
+                    class="product__img"
+                  />
+                  <div class="product__overlay">
+                    <button class="product--remove">remove from list</button>
+                  </div>
+                </div>
+
+                <h3 class="product__title">Huawei mate s</h3>
+                <span class="product__price">280.00</span>
+
+                <form action="#" class="product__form">
+                  <button class="product__btn" type="button">
+                    <i class="fas fa-trash-alt"></i>
+                  </button>
+
+                  <button class="product__btn" type="button">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </form>
+              </li>
+
+              <li class="wishlist__item product col-3">
+                <div class="product__img-wrapper">
+                  <img
+                    src="images/products/5.jpg"
+                    alt="product"
+                    class="product__img"
+                  />
+                  <div class="product__overlay">
+                    <button class="product--remove">remove from list</button>
+                  </div>
+                </div>
+
+                <h3 class="product__title">Huawei mate s</h3>
+                <span class="product__price">280.00</span>
+
+                <form action="#" class="product__form">
+                  <button class="product__btn" type="button">
+                    <i class="fas fa-trash-alt"></i>
+                  </button>
+
+                  <button class="product__btn" type="button">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </form>
+              </li>
+
+              <li class="wishlist__item product col-3">
+                <div class="product__img-wrapper">
+                  <img
+                    src="images/products/4.jpg"
+                    alt="product"
+                    class="product__img"
+                  />
+                  <div class="product__overlay">
+                    <button class="product--remove">remove from list</button>
+                  </div>
+                </div>
+
+                <h3 class="product__title">Huawei mate s</h3>
+                <span class="product__price">280.00</span>
+
+                <form action="#" class="product__form">
+                  <button class="product__btn" type="button">
+                    <i class="fas fa-trash-alt"></i>
+                  </button>
+
+                  <button class="product__btn" type="button">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </form>
+              </li>
+
+              <li class="wishlist__item product col-3">
+                <div class="product__img-wrapper">
+                  <img
+                    src="images/products/7.jpg"
+                    alt="product"
+                    class="product__img"
+                  />
+                  <div class="product__overlay">
+                    <button class="product--remove">remove from list</button>
+                  </div>
+                </div>
+
+                <h3 class="product__title">Huawei mate s</h3>
+                <span class="product__price">280.00</span>
+
+                <form action="#" class="product__form">
+                  <button class="product__btn" type="button">
+                    <i class="fas fa-trash-alt"></i>
+                  </button>
+
+                  <button class="product__btn" type="button">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </form>
+              </li>
+
+              <li class="wishlist__item product col-3">
+                <div class="product__img-wrapper">
+                  <img
+                    src="images/products/8.jpg"
+                    alt="product"
+                    class="product__img"
+                  />
+                  <div class="product__overlay">
+                    <button class="product--remove">remove from list</button>
+                  </div>
+                </div>
+
+                <h3 class="product__title">Huawei mate s</h3>
+                <span class="product__price">280.00</span>
+
+                <form action="#" class="product__form">
+                  <button class="product__btn" type="button">
+                    <i class="fas fa-trash-alt"></i>
+                  </button>
+
+                  <button class="product__btn" type="button">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </form>
+              </li>
+
+              <li class="wishlist__item product col-3">
+                <div class="product__img-wrapper">
+                  <img
+                    src="images/products/1.jpg"
+                    alt="product"
+                    class="product__img"
+                  />
+                  <div class="product__overlay">
+                    <button class="product--remove">remove from list</button>
+                  </div>
+                </div>
+
+                <h3 class="product__title">Huawei mate s</h3>
+                <span class="product__price">280.00</span>
+
+                <form action="#" class="product__form">
+                  <button class="product__btn" type="button">
+                    <i class="fas fa-trash-alt"></i>
+                  </button>
+
+                  <button class="product__btn" type="button">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </form>
+              </li>
+            </ul>
+
+            <ul class="pagination">
+              <li class="pagination__item pagination__item--active page-item">
+                <a class="pagination__link page-link" href="#">1</a>
+              </li>
+              <li class="pagination__item page-item">
+                <a class="pagination__link page-link" href="#">2</a>
+              </li>
+              <li class="pagination__item page-item">
+                <a class="pagination__link page-link" href="#">3</a>
+              </li>
+              <li class="pagination__item page-item">
+                <a class="pagination__link page-link" href="#">4</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="slider">
+          <div class="container">
+            <div class="slider__inner">
+              <!-- Slider main container -->
+              <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
 
