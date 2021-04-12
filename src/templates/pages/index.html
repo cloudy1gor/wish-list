@@ -21,7 +21,7 @@
               <h1 class="top__title">my wishlist</h1>
 
               <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'">
-                <ol class="breadcrumb">
+                <ol class="top__breadcrumb breadcrumb">
                   <li class="breadcrumb-item">
                     <a href="#">Home</a>
                   </li>
@@ -38,8 +38,8 @@
           <div class="container">
             <button class="wishlist--clear" type="button">clear list</button>
 
-            <ul class="wishlist__body row">
-              <li class="wishlist__item product col-3">
+            <ul class="wishlist__body row gy-3">
+              <li class="wishlist__item product col-sm-4 col-md-4" id="prod">
                 <div class="product__img-wrapper">
                   <img
                     src="images/products/1.jpg"
@@ -56,7 +56,7 @@
                 <span class="product__price">280.00</span>
 
                 <form action="#" class="product__form">
-                  <button class="product__btn" type="button">
+                  <button class="product__btn product__btn--delete" type="button">
                     <i class="fas fa-trash-alt"></i>
                   </button>
 
@@ -64,9 +64,9 @@
                     <i class="fas fa-shopping-cart"></i>
                   </button>
                 </form>
-              </li>
+             </li>
 
-              <li class="wishlist__item product col-3">
+              <li class="wishlist__item product col-sm-4 col-md-4 col-lg-3" id="prod">
                 <div class="product__img-wrapper">
                   <img
                     src="images/products/3.jpg"
@@ -78,11 +78,11 @@
                   </div>
                 </div>
 
-                <h3 class="product__title">Huawei mate s</h3>
-                <span class="product__price">280.00</span>
+                <h3 class="product__title">SONY XPERIA Z5</h3>
+                <span class="product__price">550.00</span>
 
                 <form action="#" class="product__form">
-                  <button class="product__btn" type="button">
+                  <button class="product__btn product__btn--delete" type="button">
                     <i class="fas fa-trash-alt"></i>
                   </button>
 
@@ -92,7 +92,7 @@
                 </form>
               </li>
 
-              <li class="wishlist__item product col-3">
+              <li class="wishlist__item product col-sm-4 col-md-4 col-lg-3" id="prod">
                 <div class="product__img-wrapper">
                   <img
                     src="images/products/4.jpg"
@@ -104,11 +104,11 @@
                   </div>
                 </div>
 
-                <h3 class="product__title">Huawei mate s</h3>
-                <span class="product__price">280.00</span>
+                <h3 class="product__title">Xiaomi Mi 4i</h3>
+                <span class="product__price">350.00</span>
 
                 <form action="#" class="product__form">
-                  <button class="product__btn" type="button">
+                  <button class="product__btn product__btn--delete" type="button">
                     <i class="fas fa-trash-alt"></i>
                   </button>
 
@@ -118,7 +118,7 @@
                 </form>
               </li>
 
-              <li class="wishlist__item product col-3">
+              <li class="wishlist__item product col-sm-4 col-md-4 col-lg-3" id="prod">
                 <div class="product__img-wrapper">
                   <img
                     src="images/products/5.jpg"
@@ -130,11 +130,11 @@
                   </div>
                 </div>
 
-                <h3 class="product__title">Huawei mate s</h3>
-                <span class="product__price">280.00</span>
+                <h3 class="product__title">HUAWEI G8 4G</h3>
+                <span class="product__price">350.00</span>
 
                 <form action="#" class="product__form">
-                  <button class="product__btn" type="button">
+                  <button class="product__btn product__btn--delete" type="button">
                     <i class="fas fa-trash-alt"></i>
                   </button>
 
@@ -144,7 +144,7 @@
                 </form>
               </li>
 
-              <li class="wishlist__item product col-3">
+              <li class="wishlist__item product col-sm-4 col-md-4 col-lg-3" id="prod">
                 <div class="product__img-wrapper">
                   <img
                     src="images/products/4.jpg"
@@ -156,11 +156,14 @@
                   </div>
                 </div>
 
-                <h3 class="product__title">Huawei mate s</h3>
-                <span class="product__price">280.00</span>
+                <h3 class="product__title">iPhone Rose Gold</h3>
+                <div class="product__offer">
+                  <span class="product__price">280.00</span>
+                  <span class="product__sale">$649.00</span>
+                </div>
 
                 <form action="#" class="product__form">
-                  <button class="product__btn" type="button">
+                  <button class="product__btn product__btn--delete" type="button">
                     <i class="fas fa-trash-alt"></i>
                   </button>
 
@@ -170,7 +173,7 @@
                 </form>
               </li>
 
-              <li class="wishlist__item product col-3">
+              <li class="wishlist__item product col-sm-4 col-md-4 col-lg-3" id="prod">
                 <div class="product__img-wrapper">
                   <img
                     src="images/products/7.jpg"
@@ -182,11 +185,11 @@
                   </div>
                 </div>
 
-                <h3 class="product__title">Huawei mate s</h3>
-                <span class="product__price">280.00</span>
+                <h3 class="product__title">HUAWEI G8 4G</h3>
+                <span class="product__price">350.00</span>
 
                 <form action="#" class="product__form">
-                  <button class="product__btn" type="button">
+                  <button class="product__btn product__btn--delete" type="button">
                     <i class="fas fa-trash-alt"></i>
                   </button>
 
@@ -196,7 +199,7 @@
                 </form>
               </li>
 
-              <li class="wishlist__item product col-3">
+              <li class="wishlist__item product col-sm-4 col-md-4 col-lg-3" id="prod">
                 <div class="product__img-wrapper">
                   <img
                     src="images/products/8.jpg"
@@ -208,11 +211,11 @@
                   </div>
                 </div>
 
-                <h3 class="product__title">Huawei mate s</h3>
-                <span class="product__price">280.00</span>
+                <h3 class="product__title">Galaxy Core Prime </h3>
+                <span class="product__price">399.00</span>
 
                 <form action="#" class="product__form">
-                  <button class="product__btn" type="button">
+                  <button class="product__btn product__btn--delete" type="button">
                     <i class="fas fa-trash-alt"></i>
                   </button>
 
@@ -222,7 +225,7 @@
                 </form>
               </li>
 
-              <li class="wishlist__item product col-3">
+              <li class="wishlist__item product col-sm-4 col-md-4 col-lg-3" id="prod">
                 <div class="product__img-wrapper">
                   <img
                     src="images/products/1.jpg"
@@ -234,11 +237,11 @@
                   </div>
                 </div>
 
-                <h3 class="product__title">Huawei mate s</h3>
-                <span class="product__price">280.00</span>
+                <h3 class="product__title">Apple iPhone 6S</h3>
+                <span class="product__price">550.00</span>
 
                 <form action="#" class="product__form">
-                  <button class="product__btn" type="button">
+                  <button class="product__btn product__btn--delete" type="button">
                     <i class="fas fa-trash-alt"></i>
                   </button>
 
@@ -274,10 +277,117 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                   <!-- Slides -->
-                  <div class="swiper-slide">Slide 1</div>
-                  <div class="swiper-slide">Slide 2</div>
-                  <div class="swiper-slide">Slide 3</div>
-                </div>
+                  <div class="slider__item swiper-slide">
+                    <div class="slider__slide">
+                      <i class="slider__icon fas fa-thumbs-up"></i>
+                    </div>
+
+                    <div class="slider__text">
+                      <h3 class="slider__title">Full warrenty</h3>
+                      <span class="slider__subtitle"
+                        >Read About Our Warrenty</span
+                      >
+                      <span class="slider__line"></span>
+                    </div>
+                  </div>
+
+                  <div class="slider__item swiper-slide">
+                    <div class="slider__slide">
+                      <i class="slider__icon fas fa-truck"></i>
+                    </div>
+
+                    <div class="slider__text">
+                      <h3 class="slider__title">express shipping</h3>
+                      <span class="slider__subtitle"
+                        >Local & International Shipping</span
+                      >
+                      <span class="slider__line"></span>
+                    </div>
+                  </div>
+
+                  <div class="slider__item swiper-slide">
+                    <div class="slider__slide">
+                      <i class="slider__icon fab fa-microblog"></i>
+                    </div>
+
+                    <div class="slider__text">
+                      <h3 class="slider__title">mobile blog</h3>
+                      <span class="slider__subtitle"
+                        >Discuss Your Favourite Phone</span
+                      >
+                      <span class="slider__line"></span>
+                    </div>
+                  </div>
+
+                  <div class="slider__item swiper-slide">
+                    <div class="slider__slide">
+                      <i class="slider__icon fas fa-headset"></i>
+                    </div>
+
+                    <div class="slider__text">
+                      <h3 class="slider__title">24/7 Support</h3>
+                      <span class="slider__subtitle"
+                        >Get Full Support via Chat</span
+                      >
+                      <span class="slider__line"></span>
+                    </div>
+                  </div>
+
+                  <div class="slider__item swiper-slide">
+                    <div class="slider__slide">
+                      <i class="slider__icon fas fa-headset"></i>
+                    </div>
+
+                    <div class="slider__text">
+                      <h3 class="slider__title">24/7 Support</h3>
+                      <span class="slider__subtitle"
+                        >Get Full Support via Chat</span
+                      >
+                      <span class="slider__line"></span>
+                    </div>
+                  </div>
+
+                  <div class="slider__item swiper-slide">
+                    <div class="slider__slide">
+                      <i class="slider__icon fas fa-headset"></i>
+                    </div>
+
+                    <div class="slider__text">
+                      <h3 class="slider__title">24/7 Support</h3>
+                      <span class="slider__subtitle"
+                        >Get Full Support via Chat</span
+                      >
+                      <span class="slider__line"></span>
+                    </div>
+                  </div>
+
+                  <div class="slider__item swiper-slide">
+                    <div class="slider__slide">
+                      <i class="slider__icon fas fa-headset"></i>
+                    </div>
+
+                    <div class="slider__text">
+                      <h3 class="slider__title">24/7 Support</h3>
+                      <span class="slider__subtitle"
+                        >Get Full Support via Chat</span
+                      >
+                      <span class="slider__line"></span>
+                    </div>
+                  </div>
+
+                  <div class="slider__item swiper-slide">
+                    <div class="slider__slide">
+                      <i class="slider__icon fas fa-headset"></i>
+                    </div>
+
+                    <div class="slider__text">
+                      <h3 class="slider__title">24/7 Support</h3>
+                      <span class="slider__subtitle"
+                        >Get Full Support via Chat</span
+                      >
+                      <span class="slider__line"></span>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>

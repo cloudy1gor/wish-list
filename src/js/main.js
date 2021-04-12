@@ -1,14 +1,19 @@
-// core version + navigation, pagination modules:
 import Swiper from "swiper";
 
 document.addEventListener("DOMContentLoaded", () => {
-  // init Swiper:
   const swiper = new Swiper(".swiper-container", {
-    // Optional parameters
+    slidesPerView: 1,
     loop: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1240: {
+        slidesPerView: 4,
+      },
+    },
     autoplay: {
-      delay: 1500,
-      disableOnInteraction: false,
+      delay: 1000,
     },
   });
 });

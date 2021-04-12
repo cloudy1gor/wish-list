@@ -63,16 +63,20 @@ body {
   @extend %ms-700;
 }
 
+.hide {
+  display: none;
+}
+
 .fa,
 .fas,
 .far,
 .fal,
 .fab {
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-weight: 900;
 
   &::before {
-    font-family: "Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
     font-weight: 900;
   }
 }
